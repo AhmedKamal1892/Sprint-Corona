@@ -1,0 +1,74 @@
+.main-button {
+    @include flexcenter;
+}
+
+.primary-button,
+.third-button {
+    margin-block-start: $margin-40;
+}
+
+.primary-button {
+    background-color: $primary-button;
+    color: $white ;
+    font-size: $font-20;
+    box-shadow: 0 .5rem 5.43rem 0rem rgba($black, 0.1);
+    font-family: GelionBold;
+    border-radius: $radius-64;
+    padding-inline: $padding-30;
+    padding-block: $padding-34;
+    max-width: 50%;
+
+    &:hover {
+        color: $primary-button ;
+        background-color: $white;
+    }
+}
+
+.secondary-button {
+    background-color: $white;
+    color: $word-navbutton;
+    font-family: GelionMedium;
+    font-size: $font-18;
+    border: $font-2 solid rgba($primary-button, 1);
+    border-radius: $radius-46;
+    padding-inline: $padding-50;
+    padding-block: $padding-16;
+
+    &:hover {
+        color: $white ;
+        background-color: $word-navbutton;
+    }
+}
+
+.third-button {
+    background-color: rgba($primary-color, 0.15);
+    color: rgba($primary-color, 1);
+    font-family: GelionSemiBold;
+    font-size: $font-18 ;
+    border-radius: $radius-64 ;
+    padding-inline: $padding-32;
+    padding-block: $padding-30;
+    max-width: 48%;
+
+    &:hover {
+        color: $white ;
+        background-color: rgba($primary-color, 1);
+    }
+}
+
+.fourth-button {
+    background-color: $send-button;
+    color: $white;
+    font-family: GelionMedium;
+    font-size: $font-20;
+    border-radius: $radius-157;
+    padding-inline: $padding-64;
+    padding-block: $padding-20;
+    @include position(absolute, $right: 1.5rem);
+
+    &:hover {
+        color: $send-button ;
+        background-color: $white;
+        border: 2px solid red;
+    }
+}

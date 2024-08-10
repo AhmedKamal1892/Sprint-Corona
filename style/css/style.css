@@ -1,0 +1,480 @@
+@font-face {
+  font-family: GelionRegular;
+  src: url(../../fonts/GelionRegular.ttf); }
+@font-face {
+  font-family: GelionBold;
+  src: url(../../fonts/GelionBold.ttf); }
+@font-face {
+  font-family: GelionMedium;
+  src: url(../../fonts/GelionMedium.ttf); }
+@font-face {
+  font-family: GelionSemiBold;
+  src: url(../../fonts/GelionSemiBold.ttf); }
+@font-face {
+  font-family: RedHatDisplay-Regular;
+  src: url(../../fonts/RedHatDisplay-Regular.ttf); }
+@font-face {
+  font-family: RedHatDisplay-Bold;
+  src: url(../../fonts/RedHatDisplay-Bold.ttf); }
+@font-face {
+  font-family: RedHatDisplay-Medium;
+  src: url(../../fonts/RedHatDisplay-Medium.ttf); }
+@font-face {
+  font-family: RedHatDisplay-SemiBold;
+  src: url(../../fonts/RedHatDisplay-SemiBold.ttf); }
+html {
+  font-size: 16px;
+  font-family: GelionRegular; }
+
+* {
+  margin: 0rem;
+  padding: 0rem; }
+
+body {
+  background-color: #fff8f8; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+h4 {
+  color: #fa5652;
+  font-family: RedHatDisplay-Bold;
+  font-size: 1.25rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem; }
+
+span,
+h3,
+h2 {
+  color: #035755; }
+
+span,
+h2 {
+  font-family: RedHatDisplay-Bold; }
+
+h3 {
+  font-family: GelionMedium;
+  font-size: 1.5rem;
+  margin-block: 1.85rem 1.25rem; }
+
+span {
+  display: block; }
+
+p {
+  color: #4b4f51;
+  font-size: 1rem;
+  font-family: GelionRegular; }
+
+h2 {
+  font-size: 3.25rem; }
+
+h1 {
+  color: #0C6C44;
+  font-family: GelionSemiBold;
+  font-size: 4rem;
+  text-align: center; }
+
+.main-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.primary-button,
+.third-button {
+  -webkit-margin-before: 2.5rem;
+          margin-block-start: 2.5rem; }
+
+.primary-button {
+  background-color: #fb4c47;
+  color: #fff;
+  font-size: 1.25rem;
+  -webkit-box-shadow: 0 0.5rem 5.43rem 0rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 5.43rem 0rem rgba(0, 0, 0, 0.1);
+  font-family: GelionBold;
+  border-radius: 4rem;
+  padding-inline: 1.85rem;
+  padding-block: 2.125rem;
+  max-width: 50%; }
+  .primary-button:hover {
+    color: #fb4c47;
+    background-color: #fff; }
+
+.secondary-button {
+  background-color: #fff;
+  color: #ff383d;
+  font-family: GelionMedium;
+  font-size: 1.125rem;
+  border: 0.125rem solid #fb4c47;
+  border-radius: 2.875rem;
+  padding-inline: 3.125rem;
+  padding-block: 1rem; }
+  .secondary-button:hover {
+    color: #fff;
+    background-color: #ff383d; }
+
+.third-button {
+  background-color: rgba(250, 86, 82, 0.15);
+  color: #fa5652;
+  font-family: GelionSemiBold;
+  font-size: 1.125rem;
+  border-radius: 4rem;
+  padding-inline: 2rem;
+  padding-block: 1.85rem;
+  max-width: 48%; }
+  .third-button:hover {
+    color: #fff;
+    background-color: #fa5652; }
+
+.fourth-button {
+  background-color: #f44a45;
+  color: #fff;
+  font-family: GelionMedium;
+  font-size: 1.25rem;
+  border-radius: 9.8125rem;
+  padding-inline: 4rem;
+  padding-block: 1.25rem;
+  position: absolute;
+  right: 1.5rem; }
+  .fourth-button:hover {
+    color: #f44a45;
+    background-color: #fff;
+    border: 2px solid red; }
+
+.navbar {
+  padding-block: 1.85rem 1rem;
+  position: static;
+  -webkit-transform: translateY(100);
+          transform: translateY(100);
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear; }
+  .navbar:hover {
+    background-color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0rem;
+    z-index: 2; }
+  .navbar .container .navbar-collapse {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0; }
+    .navbar .container .navbar-collapse .navbar-nav {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .navbar .container .navbar-collapse .navbar-nav .nav-item:not(:last-child) {
+        -webkit-margin-end: 1rem;
+           -moz-margin-end: 1rem;
+                margin-inline-end: 1rem;
+        text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25); }
+      .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+        font-family: GelionRegular;
+        font-size: 1rem;
+        color: #000;
+        -webkit-transition: color 0.5s;
+        transition: color 0.5s;
+        position: relative; }
+        .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link::after {
+          content: '';
+          position: absolute;
+          top: 2.2rem;
+          left: 50%;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          background-color: #fa5652;
+          height: 0.35rem;
+          width: 0rem; }
+        .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+          color: #fa5652; }
+          .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after {
+            border-radius: 50%;
+            width: 0.35rem; }
+
+.alertion {
+  padding-block: 2.5rem; }
+  .alertion .container-fluid .row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    .alertion .container-fluid .row .alertion-content {
+      -webkit-padding-start: 6rem;
+         -moz-padding-start: 6rem;
+              padding-inline-start: 6rem; }
+      .alertion .container-fluid .row .alertion-content span {
+        text-align: left;
+        font-size: 2rem;
+        -webkit-margin-after: 1.25rem;
+                margin-block-end: 1.25rem; }
+
+.about-us {
+  margin-block: 3.125rem; }
+  .about-us .half-side {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 0rem; }
+  .about-us .full-side-corona {
+    position: absolute;
+    bottom: -6rem;
+    right: 4rem; }
+
+.Contagion-form .side-small-corona {
+  position: absolute;
+  bottom: 0rem;
+  left: 5rem;
+  z-index: -1; }
+.Contagion-form p {
+  font-size: 0.875rem; }
+.Contagion-form h2,
+.Contagion-form h4,
+.Contagion-form p {
+  text-align: center; }
+.Contagion-form h4 {
+  -webkit-margin-after: 0.2rem;
+          margin-block-end: 0.2rem; }
+.Contagion-form .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+  .Contagion-form .row .card {
+    -webkit-box-shadow: 0rem 0.3125rem 5rem 0rem rgba(0, 0, 0, 0.08);
+            box-shadow: 0rem 0.3125rem 5rem 0rem rgba(0, 0, 0, 0.08);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-color: transparent;
+    margin-inline: 1.25rem; }
+    .Contagion-form .row .card:hover::after {
+      content: '';
+      background-color: #fb4c47;
+      position: absolute;
+      bottom: 0rem;
+      width: 100%;
+      height: 0.25rem;
+      border-radius: 0rem 0rem 6.25rem 6.25rem; }
+    .Contagion-form .row .card:first-child {
+      position: relative;
+      -webkit-box-shadow: 0rem 2.1875rem 5.4375rem 0rem rgba(0, 0, 0, 0.11);
+              box-shadow: 0rem 2.1875rem 5.4375rem 0rem rgba(0, 0, 0, 0.11); }
+    .Contagion-form .row .card img {
+      max-height: 15.56rem; }
+    .Contagion-form .row .card .card-title {
+      text-align: center; }
+
+.symptoms-form {
+  -webkit-margin-after: 4rem;
+          margin-block-end: 4rem; }
+  .symptoms-form .symptoms-form-content p {
+    font-size: 0.875rem; }
+  .symptoms-form .symptoms-form-content h2,
+  .symptoms-form .symptoms-form-content h4,
+  .symptoms-form .symptoms-form-content p {
+    text-align: center; }
+  .symptoms-form .symptoms-form-content h4 {
+    -webkit-margin-after: 0.2rem;
+            margin-block-end: 0.2rem; }
+  .symptoms-form .symptoms-image {
+    -webkit-margin-before: -1.5rem;
+            margin-block-start: -1.5rem;
+    max-width: 80%; }
+  .symptoms-form .paint-left {
+    position: absolute;
+    bottom: 14rem;
+    left: 0rem; }
+  .symptoms-form .paint-right {
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem; }
+
+.restrication-actions .half-big-green {
+  position: absolute;
+  top: 30rem; }
+.restrication-actions .half-big-red {
+  position: absolute;
+  bottom: 15rem;
+  right: 0rem; }
+.restrication-actions .full-small-green {
+  position: absolute;
+  bottom: 35rem;
+  right: 2rem; }
+.restrication-actions .half-big-green,
+.restrication-actions .half-big-red,
+.restrication-actions .full-small-green {
+  z-index: -1; }
+.restrication-actions .restrication-actions-content p {
+  font-size: 0.875rem; }
+.restrication-actions .restrication-actions-content h2,
+.restrication-actions .restrication-actions-content h4,
+.restrication-actions .restrication-actions-content p {
+  text-align: center; }
+.restrication-actions .restrication-actions-content h4 {
+  -webkit-margin-after: 0.2rem;
+          margin-block-end: 0.2rem; }
+.restrication-actions .flex-column .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem; }
+  .restrication-actions .flex-column .row:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+  .restrication-actions .flex-column .row .action-set {
+    position: relative;
+    -webkit-margin-start: 2.5rem;
+       -moz-margin-start: 2.5rem;
+            margin-inline-start: 2.5rem; }
+    .restrication-actions .flex-column .row .action-set span {
+      position: absolute;
+      top: 0.5rem;
+      left: -5rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-family: RedHatDisplay-Bold;
+      font-size: 2.6rem;
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 50%;
+      background-color: rgba(250, 86, 82, 0.15);
+      color: #fa5652; }
+
+.question-in-mind .container {
+  max-width: 70%; }
+  .question-in-mind .container form {
+    position: relative;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .question-in-mind .container form input {
+      width: 100%;
+      color: #4b4f51;
+      background-color: #fff;
+      border: white;
+      padding-block: 2.5rem;
+      -webkit-padding-start: 1.5rem;
+         -moz-padding-start: 1.5rem;
+              padding-inline-start: 1.5rem;
+      border-radius: 4rem; }
+.question-in-mind .full-light-red {
+  position: absolute;
+  top: 2rem;
+  right: 3rem; }
+.question-in-mind .half-light-red {
+  position: absolute;
+  right: 0rem;
+  z-index: -1; }
+
+.footer {
+  -webkit-padding-before: 10rem;
+          padding-block-start: 10rem; }
+  .footer .container .row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0; }
+    .footer .container .row ul {
+      -webkit-margin-after: 0rem;
+              margin-block-end: 0rem; }
+      .footer .container .row ul li a {
+        font-size: 1rem;
+        font-family: GelionRegular;
+        color: #00402e; }
+        .footer .container .row ul li a:hover {
+          color: #fa5652; }
+  .footer span {
+    text-align: center;
+    color: #415e56;
+    font-size: 1rem;
+    font-family: GelionRegular;
+    -webkit-padding-before: 3rem;
+            padding-block-start: 3rem; }
+
+@media (max-width: 991px) {
+  html {
+    font-size: 14px; }
+    html .navbar .container .navbar-collapse .navbar-nav {
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      html .navbar .container .navbar-collapse .navbar-nav .nav-item:not(:last-child) {
+        -webkit-margin-end: 0rem;
+           -moz-margin-end: 0rem;
+                margin-inline-end: 0rem; }
+    html .alertion .container-fluid .row {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      html .alertion .container-fluid .row .alertion-content {
+        -webkit-padding-start: 0.5rem;
+           -moz-padding-start: 0.5rem;
+                padding-inline-start: 0.5rem; }
+    html .about-us .half-side {
+      position: absolute;
+      bottom: -8rem; }
+    html .about-us .full-side-corona {
+      position: absolute;
+      bottom: -15rem; }
+    html .Contagion-form .row {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      html .Contagion-form .row .card {
+        -webkit-margin-after: 1rem;
+                margin-block-end: 1rem; }
+    html .symptoms-form .paint-left,
+    html .symptoms-form .paint-right {
+      z-index: -1; }
+    html .restrication-actions .flex-column .row {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-margin-after: 1rem;
+              margin-block-end: 1rem; }
+      html .restrication-actions .flex-column .row:nth-child(even) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse; }
+      html .restrication-actions .flex-column .row .action-set .numbers,
+      html .restrication-actions .flex-column .row .action-set span {
+        position: static; }
+    html .question-in-mind .container form .fourth-button {
+      padding-inline: 1.5rem;
+      padding-block: 1rem; }
+    html .footer .container .row {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      html .footer .container .row ul {
+        margin-block: 1rem; } }

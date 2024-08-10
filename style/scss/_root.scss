@@ -1,0 +1,71 @@
+html {
+    font-size: 16px;
+    font-family: GelionRegular;
+}
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+body {
+    background-color: rgba(255, 248, 248, 1);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h4 {
+    color: $primary-color;
+    font-family: RedHatDisplay-Bold;
+    font-size: $font-20;
+    margin-block-end: $margin-16;
+}
+
+span,
+h3,
+h2 {
+    color: $secondary-color;
+}
+
+span,
+h2 {
+    font-family: RedHatDisplay-Bold;
+}
+
+h3 {
+    font-family: GelionMedium;
+    font-size: $font-24;
+    margin-block: $margin-30 $margin-20;
+}
+
+span {
+    display: block;
+}
+
+p {
+    color: $text-color;
+    font-size: $font-16;
+    font-family: GelionRegular;
+}
+
+h2 {
+    font-size: $font-52;
+}
+
+h1 {
+    color: $footer-header;
+    font-family: GelionSemiBold;
+    font-size: $font-64;
+    text-align: center;
+}

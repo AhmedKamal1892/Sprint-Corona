@@ -1,0 +1,460 @@
+//navbar-section Css declarations
+.navbar {
+    padding-block: $padding-30 $padding-16;
+    @include position(static);
+    transform: translateY(100);
+    transition: transform 0.5s linear;
+
+    &:hover {
+        background-color: $white;
+        @include position(sticky, $top: 0rem);
+        z-index: 2;
+    }
+
+    .container {
+        .navbar-collapse {
+            flex-grow: 0;
+
+            .navbar-nav {
+                align-items: center;
+
+                .nav-item {
+                    &:not(:last-child) {
+                        margin-inline-end: $margin-16;
+                        text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+                    }
+
+                    .nav-link {
+                        font-family: GelionRegular;
+                        font-size: $font-16;
+                        color: $black;
+                        transition: color 0.5s;
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            @include position(absolute, $top: 2.2rem, $left: 50%);
+                            transform: translateY(-50%);
+                            background-color: $primary-color;
+                            height: 0.35rem;
+                            width: 0rem;
+                        }
+
+                        &:hover {
+                            color: $primary-color;
+
+                            &::after {
+                                border-radius: $radius-50;
+                                width: 0.35rem;
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// alertion-section "Hero" Css declarations
+
+.alertion {
+
+    padding-block: $padding-40;
+
+    .container-fluid {
+        .row {
+            flex-wrap: nowrap;
+
+            .alertion-content {
+                padding-inline-start: $padding-96;
+
+                span {
+                    text-align: left;
+                    font-size: $font-32;
+                    margin-block-end: $margin-20;
+                }
+            }
+
+        }
+    }
+}
+
+// What is Coronavirus section Css declarations
+
+.about-us {
+    margin-block: $margin-50;
+
+    .half-side {
+        @include position(absolute, $right: 0rem, $bottom: 1.5rem)
+    }
+
+    .full-side-corona {
+        @include position(absolute, $bottom: -6rem, $right: 4rem)
+    }
+
+}
+
+// Transimition Ways for covid 19 Css declarations
+
+.Contagion-form {
+    .side-small-corona {
+        @include position(absolute, $bottom: 0rem, $left: 5rem);
+        z-index: -1;
+    }
+
+    p {
+        font-size: $font-14;
+    }
+
+    h2,
+    h4,
+    p {
+        text-align: center;
+    }
+
+    h4 {
+        margin-block-end: 0.2rem;
+    }
+
+    .row {
+        flex-wrap: nowrap;
+
+        .card {
+            box-shadow: 0rem 0.3125rem 5rem 0rem rgba(0, 0, 0, 0.08);
+            flex-wrap: wrap;
+            justify-content: center;
+            border-color: transparent;
+            margin-inline: $margin-20;
+
+            &:hover {
+                &::after {
+                    content: '';
+                    background-color: $primary-button;
+                    @include position (absolute, $bottom: 0rem);
+                    width: 100%;
+                    height: 0.25rem;
+                    border-radius: 0rem 0rem 6.25rem 6.25rem;
+                }
+            }
+
+            &:first-child {
+                position: relative;
+                box-shadow: 0rem 2.1875rem 5.4375rem 0rem rgba(0, 0, 0, 0.11);
+            }
+
+            img {
+                max-height: 15.56rem;
+            }
+
+            .card-title {
+                text-align: center;
+            }
+        }
+    }
+}
+
+// Symptom forms section Css declarations
+
+.symptoms-form {
+    margin-block-end: $margin-64;
+
+    .symptoms-form-content {
+        p {
+            font-size: $font-14;
+        }
+
+        h2,
+        h4,
+        p {
+            text-align: center;
+        }
+
+        h4 {
+            margin-block-end: 0.2rem;
+        }
+
+    }
+
+    .symptoms-image {
+        margin-block-start: -$margin-24;
+        max-width: 80%;
+    }
+
+    .paint-left {
+        @include position(absolute, $left: 0rem, $bottom: 14rem);
+    }
+
+    .paint-right {
+        @include position(absolute, $right: 0rem, $bottom: 0rem);
+    }
+}
+
+// Restriction actions section Css declarations
+
+.restrication-actions {
+    .half-big-green {
+        @include position(absolute, $top: 30rem);
+    }
+
+    .half-big-red {
+        @include position(absolute, $right: 0rem, $bottom: 15rem);
+
+    }
+
+    .full-small-green {
+        @include position(absolute, $right: 2rem, $bottom: 35rem);
+    }
+
+    .half-big-green,
+    .half-big-red,
+    .full-small-green {
+        z-index: -1;
+    }
+
+    .restrication-actions-content {
+        p {
+            font-size: $font-14;
+        }
+
+        h2,
+        h4,
+        p {
+            text-align: center;
+        }
+
+        h4 {
+            margin-block-end: 0.2rem;
+        }
+    }
+
+    .flex-column {
+        .row {
+            flex-wrap: nowrap;
+            margin-block-end: $margin-16;
+
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+
+            .action-set {
+                position: relative;
+                margin-inline-start: 2.5rem;
+
+                span {
+                    @include position(absolute, $top: 0.5rem, $left: -5rem);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: RedHatDisplay-Bold;
+                    font-size: $font-41 ;
+                    width: 4.5rem;
+                    height: 4.5rem;
+                    border-radius: $radius-50;
+                    background-color: rgba($primary-color, 0.15);
+                    color: rgba($primary-color, 1);
+                }
+            }
+        }
+    }
+
+}
+
+// Ask your question section Css declarations
+
+.question-in-mind {
+    .container {
+        max-width: 70%;
+
+        form {
+            position: relative;
+            max-width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+
+            input {
+                width: 100%;
+                color: $text-color;
+                background-color: $white;
+                border: white;
+                padding-block: 2.5rem;
+                padding-inline-start: 1.5rem;
+                border-radius: $radius-64;
+            }
+        }
+
+    }
+
+    .full-light-red {
+        @include position(absolute, $top: 2rem, $right: 3rem);
+    }
+
+    .half-light-red {
+        @include position(absolute, $right: 0rem);
+        z-index: -1;
+    }
+
+}
+
+// Footer section Css declarations
+
+.footer {
+    padding-block-start: 10rem;
+
+    .container {
+        .row {
+            flex-wrap: nowrap;
+            flex-grow: 0;
+
+            ul {
+                margin-block-end: 0rem;
+
+                li {
+                    a {
+                        font-size: $font-16;
+                        font-family: GelionRegular;
+                        color: $footer-list;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    span {
+        text-align: center;
+        color: $copyright;
+        font-size: $font-16;
+        font-family: GelionRegular;
+        padding-block-start: 3rem;
+    }
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 14px;
+
+        //navbar-section MAX WIDTH 991px Css declarations
+        .navbar {
+            .container {
+                .navbar-collapse {
+                    .navbar-nav {
+                        align-content: flex-start;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        .nav-item {
+                            &:not(:last-child) {
+                                margin-inline-end: 0rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // alertion-section "Hero" MAX WIDTH 991px Css declarations
+
+        .alertion {
+            .container-fluid {
+                .row {
+                    flex-wrap: wrap;
+
+                    .alertion-content {
+                        padding-inline-start: $padding-8;
+                    }
+                }
+            }
+        }
+
+        // What is Coronavirus-section MAX WIDTH 991px Css declarations
+
+        .about-us {
+            .half-side {
+                @include position(absolute, $bottom: -8rem);
+            }
+
+            .full-side-corona {
+                @include position(absolute, $bottom: -15rem);
+            }
+        }
+
+        // Transimition Ways for covid 19-section MAX WIDTH 991px Css declarations
+
+        .Contagion-form {
+            .row {
+                flex-wrap: wrap;
+
+                .card {
+                    margin-block-end: $margin-16;
+                }
+            }
+        }
+
+        // Symptom forms-section  MAX WIDTH 991px Css declarations
+
+        .symptoms-form {
+
+            .paint-left,
+            .paint-right {
+                z-index: -1;
+            }
+        }
+
+        // Restriction actions-section  MAX WIDTH 991px Css declarations
+
+        .restrication-actions {
+            .flex-column {
+                .row {
+                    flex-wrap: wrap;
+                    margin-block-end: 1rem;
+
+                    &:nth-child(even) {
+                        flex-direction: column-reverse;
+                    }
+
+                    .action-set {
+
+                        .numbers,
+                        span {
+                            @include position(static);
+                        }
+                    }
+                }
+            }
+        }
+
+        //  Ask your questions-section  MAX WIDTH 991px Css declarations
+
+        .question-in-mind {
+            .container {
+                form {
+                    .fourth-button {
+                        padding-inline: 1.5rem;
+                        padding-block: 1rem;
+                    }
+                }
+            }
+        }
+
+        // Footer-section  MAX WIDTH 991px Css declarations
+
+        .footer {
+            .container {
+                .row {
+                    flex-wrap: wrap;
+
+                    ul {
+                        margin-block: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
